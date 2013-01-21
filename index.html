@@ -14,10 +14,6 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        <div class="responsive-tool">
-            <a id="bookmarklet" href="javascript:void((function(){var d=document;d.write('<!DOCTYPE html><html><head><meta charset=&quot;UTF-8&quot;><title>'+d.title+' - Responsive test</title><link rel=&quot;stylesheet&quot; href=&quot;http://responsive.victorcoulon.fr/assets/css/app.css&quot;><script src=&quot;http://responsive.victorcoulon.fr/assets/js/app.min.js&quot;></script></head><body><header><div class=&quot;close&quot;><a href=&quot;#&quot;>×</a></div><div id=&quot;size&quot;></div><div class=&quot;keyboard&quot;><a href=&quot;#&quot;>I</a></div><div class=&quot;cssrefresh&quot;><a href=&quot;#&quot;>I</a></div><div id=&quot;devices&quot;><a href=&quot;#&quot; class=&quot;tablet-portrait&quot;><span>Tablet Portrait</span></a><a href=&quot;#&quot; class=&quot;tablet-landscape&quot;><span>Tablet Landscape</span></a><a href=&quot;#&quot; class=&quot;smartphone-landscape&quot;><span>iPhone Landscape</span></a><a href=&quot;#&quot; class=&quot;smartphone-portrait&quot;><span>iPhone Portrait</span></a><a href=&quot;#&quot; class=&quot;auto active&quot;><span>Auto</span></a></div></header><section><div id=&quot;wrapper&quot;><iframe src=&quot;'+d.URL+'&quot; onLoad=&quot;resbook.changeUrl(this.contentWindow.location,this.contentDocument.title);&quot;></iframe><span class=&quot;keyboard-bg&quot;></span></div></section></body></html>')})());">RWD Bookmarklet</a>
-        </div>
-        <a href="#" id="opt-out">X</a>
         <div class="wrapper clearfix">
             <div class="header clearfix">
                 <div class="utility">
@@ -61,109 +57,411 @@
                         <ul class="products clearfix">
                             <li class="product clearfix">
                                 <div class="media clearfix">
-                                    <a href="products/product-1.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    <div class="primary">
+                                        <a href="products/product-1.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    </div>
+                                    <div class="swatches">
+                                        <ul class="clearfix">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="black"><a title="Black" href="#">Black</a></li>
+                                            <li class="white"><a title="White" href="#">White</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="info clearfix">
-                                    <h5 class="name">Product 1</h5>
+                                    <h5 class="name"><a href="products/product-1.html">Product 1</a></h5>
+                                    <p class="sku">Item #: WL0001</p>
+                                    <p class="description">Brief Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="ratings">
+                                        <div title="80% out of 100%" class="rating rating-80">80% out of 100%</div>
+                                    </div>
+                                    <div class="prices clearfix">
+                                        <p class="price-sale price"><span>Now </span>$9.99</p>
+                                        <p class="price-original price"><span>Was </span>$19.99</p>
+                                    </div>
+                                    <div class="compare">
+                                        <label>
+                                            <input type="checkbox" name="compare"> Compare this item
+                                        </label>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" title="Add to cart">Add to cart</a>
+                                    </div>
                                 </div>
                                 <span class="quickview-trigger">Quickview</span>
                             </li>
                             <li class="product clearfix">
                                 <div class="media clearfix">
-                                    <a href="products/product-2.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    <div class="primary">
+                                        <a href="products/product-2.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    </div>
+                                    <div class="swatches">
+                                        <ul class="clearfix">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="black"><a title="Black" href="#">Black</a></li>
+                                            <li class="white"><a title="White" href="#">White</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="info clearfix">
-                                    <h5 class="name">Product 2</h5>
+                                    <h5 class="name"><a href="products/product-2.html">Product 2</a></h5>
+                                    <p class="sku">Item #: WL0002</p>
+                                    <p class="description">Brief Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="ratings">
+                                        <div title="80% out of 100%" class="rating rating-80">80% out of 100%</div>
+                                    </div>
+                                    <div class="prices clearfix">
+                                        <p class="price-sale price"><span>Now </span>$9.99</p>
+                                        <p class="price-original price"><span>Was </span>$19.99</p>
+                                    </div>
+                                    <div class="compare">
+                                        <label>
+                                            <input type="checkbox" name="compare"> Compare this item
+                                        </label>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" title="Add to cart">Add to cart</a>
+                                    </div>
                                 </div>
                                 <span class="quickview-trigger">Quickview</span>
                             </li>
                             <li class="product clearfix">
                                 <div class="media clearfix">
-                                    <a href="products/product-3.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    <div class="primary">
+                                        <a href="products/product-3.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    </div>
+                                    <div class="swatches">
+                                        <ul class="clearfix">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="black"><a title="Black" href="#">Black</a></li>
+                                            <li class="white"><a title="White" href="#">White</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="info clearfix">
-                                    <h5 class="name">Product 3</h5>
+                                    <h5 class="name"><a href="products/product-3.html">Product 3</a></h5>
+                                    <p class="sku">Item #: WL0003</p>
+                                    <p class="description">Brief Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="ratings">
+                                        <div title="80% out of 100%" class="rating rating-100">100% out of 100%</div>
+                                    </div>
+                                    <div class="prices clearfix">
+                                        <p class="price-sale price"><span>Now </span>$25.99</p>
+                                        <p class="price-original price"><span>Was </span>$29.99</p>
+                                    </div>
+                                    <div class="compare">
+                                        <label>
+                                            <input type="checkbox" name="compare"> Compare this item
+                                        </label>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" title="Add to cart">Add to cart</a>
+                                    </div>
                                 </div>
                                 <span class="quickview-trigger">Quickview</span>
                             </li>
                             <li class="product clearfix">
                                 <div class="media clearfix">
-                                    <a href="products/product-4.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    <div class="primary">
+                                        <a href="products/product-4.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    </div>
+                                    <div class="swatches">
+                                        <ul class="clearfix">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="black"><a title="Black" href="#">Black</a></li>
+                                            <li class="white"><a title="White" href="#">White</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="info clearfix">
-                                    <h5 class="name">Product 4</h5>
+                                    <h5 class="name"><a href="products/product-4.html">Product 4</a></h5>
+                                    <p class="sku">Item #: WL0004</p>
+                                    <p class="description">Brief Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="ratings">
+                                        <div title="80% out of 100%" class="rating rating-60">60% out of 100%</div>
+                                    </div>
+                                    <div class="prices clearfix">
+                                        <p class="price"><span>Now </span>$19.99</p>
+                                    </div>
+                                    <div class="compare">
+                                        <label>
+                                            <input type="checkbox" name="compare"> Compare this item
+                                        </label>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" title="Add to cart">Add to cart</a>
+                                    </div>
                                 </div>
                                 <span class="quickview-trigger">Quickview</span>
                             </li>
                             <li class="product clearfix">
                                 <div class="media clearfix">
-                                    <a href="products/product-5.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    <div class="primary">
+                                        <a href="products/product-5.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    </div>
+                                    <div class="swatches">
+                                        <ul class="clearfix">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="black"><a title="Black" href="#">Black</a></li>
+                                            <li class="white"><a title="White" href="#">White</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="info clearfix">
-                                    <h5 class="name">Product 5</h5>
+                                    <h5 class="name"><a href="products/product-5.html">Product 5</a></h5>
+                                    <p class="sku">Item #: WL0005</p>
+                                    <p class="description">Brief Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="prices clearfix">
+                                        <p class="price-sale price"><span>Now </span>$10.99</p>
+                                        <p class="price-original price"><span>Was </span>$11.99</p>
+                                    </div>
+                                    <div class="compare">
+                                        <label>
+                                            <input type="checkbox" name="compare"> Compare this item
+                                        </label>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" title="Add to cart">Add to cart</a>
+                                    </div>
                                 </div>
                                 <span class="quickview-trigger">Quickview</span>
                             </li>
                             <li class="product clearfix">
                                 <div class="media clearfix">
-                                    <a href="products/product-6.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    <div class="primary">
+                                        <a href="products/product-6.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    </div>
+                                    <div class="swatches">
+                                        <ul class="clearfix">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="white"><a title="White" href="#">White</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="info clearfix">
-                                    <h5 class="name">Product 6</h5>
+                                    <h5 class="name"><a href="products/product-6.html">Product 6</a></h5>
+                                    <p class="sku">Item #: WL0006</p>
+                                    <p class="description">Brief Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="ratings">
+                                        <div title="80% out of 100%" class="rating rating-50">50% out of 100%</div>
+                                    </div>
+                                    <div class="prices clearfix">
+                                        <p class="price-sale price"><span>Now </span>$9.99</p>
+                                        <p class="price-original price"><span>Was </span>$29.99</p>
+                                    </div>
+                                    <div class="compare">
+                                        <label>
+                                            <input type="checkbox" name="compare"> Compare this item
+                                        </label>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" title="Add to cart">Add to cart</a>
+                                    </div>
                                 </div>
                                 <span class="quickview-trigger">Quickview</span>
                             </li>
                             <li class="product clearfix">
                                 <div class="media clearfix">
-                                    <a href="products/product-7.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    <div class="primary">
+                                        <a href="products/product-7.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    </div>
+                                    <div class="swatches">
+                                        <ul class="clearfix">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="black"><a title="Black" href="#">Black</a></li>
+                                            <li class="white"><a title="White" href="#">White</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="info clearfix">
-                                    <h5 class="name">Product 7</h5>
+                                    <h5 class="name"><a href="products/product-1.html">Product 7</a></h5>
+                                    <p class="sku">Item #: WL0007</p>
+                                    <p class="description">Brief Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="ratings">
+                                        <div title="80% out of 100%" class="rating rating-80">80% out of 100%</div>
+                                    </div>
+                                    <div class="prices clearfix">
+                                        <p class="price-sale price"><span>Now </span>$9.99</p>
+                                        <p class="price-original price"><span>Was </span>$19.99</p>
+                                    </div>
+                                    <div class="compare">
+                                        <label>
+                                            <input type="checkbox" name="compare"> Compare this item
+                                        </label>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" title="Add to cart">Add to cart</a>
+                                    </div>
                                 </div>
                                 <span class="quickview-trigger">Quickview</span>
                             </li>
                             <li class="product clearfix">
                                 <div class="media clearfix">
-                                    <a href="products/product-8.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    <div class="primary">
+                                        <a href="products/product-8.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    </div>
+                                    <div class="swatches">
+                                        <ul class="clearfix">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="black"><a title="Black" href="#">Black</a></li>
+                                            <li class="white"><a title="White" href="#">White</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="info clearfix">
-                                    <h5 class="name">Product 8</h5>
+                                    <h5 class="name"><a href="products/product-9.html">Product 8</a></h5>
+                                    <p class="sku">Item #: WL0008</p>
+                                    <p class="description">Brief Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="ratings">
+                                        <div title="80% out of 100%" class="rating rating-80">80% out of 100%</div>
+                                    </div>
+                                    <div class="prices clearfix">
+                                        <p class="price-sale price"><span>Now </span>$9.99</p>
+                                        <p class="price-original price"><span>Was </span>$19.99</p>
+                                    </div>
+                                    <div class="compare">
+                                        <label>
+                                            <input type="checkbox" name="compare"> Compare this item
+                                        </label>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" title="Add to cart">Add to cart</a>
+                                    </div>
                                 </div>
                                 <span class="quickview-trigger">Quickview</span>
                             </li>
                             <li class="product clearfix">
                                 <div class="media clearfix">
-                                    <a href="products/product-9.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    <div class="primary">
+                                        <a href="products/product-9.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    </div>
+                                    <div class="swatches">
+                                        <ul class="clearfix">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="black"><a title="Black" href="#">Black</a></li>
+                                            <li class="white"><a title="White" href="#">White</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="info clearfix">
-                                    <h5 class="name">Product 9</h5>
+                                    <h5 class="name"><a href="products/product-9.html">Product 9</a></h5>
+                                    <p class="sku">Item #: WL0009</p>
+                                    <p class="description">Brief Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="ratings">
+                                        <div title="80% out of 100%" class="rating rating-100">100% out of 100%</div>
+                                    </div>
+                                    <div class="prices clearfix">
+                                        <p class="price-sale price"><span>Now </span>$25.99</p>
+                                        <p class="price-original price"><span>Was </span>$29.99</p>
+                                    </div>
+                                    <div class="compare">
+                                        <label>
+                                            <input type="checkbox" name="compare"> Compare this item
+                                        </label>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" title="Add to cart">Add to cart</a>
+                                    </div>
                                 </div>
                                 <span class="quickview-trigger">Quickview</span>
                             </li>
                             <li class="product clearfix">
                                 <div class="media clearfix">
-                                    <a href="products/product-10.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    <div class="primary">
+                                        <a href="products/product-10.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    </div>
+                                    <div class="swatches">
+                                        <ul class="clearfix">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="black"><a title="Black" href="#">Black</a></li>
+                                            <li class="white"><a title="White" href="#">White</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="info clearfix">
-                                    <h5 class="name">Product 10</h5>
+                                    <h5 class="name"><a href="products/product-10.html">Product 10</a></h5>
+                                    <p class="sku">Item #: WL0004</p>
+                                    <p class="description">Brief Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="ratings">
+                                        <div title="80% out of 100%" class="rating rating-60">60% out of 100%</div>
+                                    </div>
+                                    <div class="prices clearfix">
+                                        <p class="price"><span>Now </span>$19.99</p>
+                                    </div>
+                                    <div class="compare">
+                                        <label>
+                                            <input type="checkbox" name="compare"> Compare this item
+                                        </label>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" title="Add to cart">Add to cart</a>
+                                    </div>
                                 </div>
                                 <span class="quickview-trigger">Quickview</span>
                             </li>
                             <li class="product clearfix">
                                 <div class="media clearfix">
-                                    <a href="products/product-11.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    <div class="primary">
+                                        <a href="products/product-11.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    </div>
+                                    <div class="swatches">
+                                        <ul class="clearfix">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="black"><a title="Black" href="#">Black</a></li>
+                                            <li class="white"><a title="White" href="#">White</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="info clearfix">
-                                    <h5 class="name">Product 11</h5>
+                                    <h5 class="name"><a href="products/product-5.html">Product 11</a></h5>
+                                    <p class="sku">Item #: WL0011</p>
+                                    <p class="description">Brief Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="prices clearfix">
+                                        <p class="price-sale price"><span>Now </span>$10.99</p>
+                                        <p class="price-original price"><span>Was </span>$11.99</p>
+                                    </div>
+                                    <div class="compare">
+                                        <label>
+                                            <input type="checkbox" name="compare"> Compare this item
+                                        </label>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" title="Add to cart">Add to cart</a>
+                                    </div>
                                 </div>
                                 <span class="quickview-trigger">Quickview</span>
                             </li>
                             <li class="product clearfix">
                                 <div class="media clearfix">
-                                    <a href="products/product-12.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    <div class="primary">
+                                        <a href="products/product-12.html" class="product-image"><img alt="" src="img/image_placeholder.png" /></a>
+                                    </div>
+                                    <div class="swatches">
+                                        <ul class="clearfix">
+                                            <li class="red"><a title="Red" href="#">Red</a></li>
+                                            <li class="white"><a title="White" href="#">White</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="info clearfix">
-                                    <h5 class="name">Product 12</h5>
+                                    <h5 class="name"><a href="products/product-6.html">Product 12</a></h5>
+                                    <p class="sku">Item #: WL0012</p>
+                                    <p class="description">Brief Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="ratings">
+                                        <div title="80% out of 100%" class="rating rating-50">50% out of 100%</div>
+                                    </div>
+                                    <div class="prices clearfix">
+                                        <p class="price-sale price"><span>Now </span>$9.99</p>
+                                        <p class="price-original price"><span>Was </span>$29.99</p>
+                                    </div>
+                                    <div class="compare">
+                                        <label>
+                                            <input type="checkbox" name="compare"> Compare this item
+                                        </label>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" title="Add to cart">Add to cart</a>
+                                    </div>
                                 </div>
                                 <span class="quickview-trigger">Quickview</span>
                             </li>
