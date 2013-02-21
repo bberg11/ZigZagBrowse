@@ -1,0 +1,626 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*Base Styles*/
+body {
+    padding: 10px;
+    min-width: 300px;
+    color: #333;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Layout Styles*/
+.header {}
+    .header .utility {
+        border-bottom: 1px solid #333;
+    }
+        .header .utility ul {
+            text-align: center;
+        }
+            .header .utility ul li {
+                display: inline-block;
+                padding: 4px;
+                font-size: 0.750em;
+            }
+    .header .cart {
+        text-align: center;
+        font-variant: small-caps;
+    }
+    .header .logo {
+        text-align: center;
+        font-variant: small-caps;
+    }
+    .header .menu {
+        display: inline-block;
+        padding: 5px 7px 7px;
+        background: #333;
+        color: #fff;
+    }
+    .header .primary-nav {
+        display: none;
+    }
+    .header .active .primary-nav {
+        display: block;
+    }
+    .header .search {
+        margin-top: -30px;
+        float: right;
+    }
+        .header .search input {
+            width: 150px;
+        }
+.content {}
+    .content .main-content {
+        padding: 10px 0;
+    }
+        .content .main-content .breadcrumbs li {
+            padding: 10px 5px 10px 0;
+            float: left;
+            font-size: 0.625em;
+        }
+        .content .main-content .breadcrumbs li:after {
+            content: "  :"
+        }
+        .content .main-content .breadcrumbs li.active:after {
+            content: "";
+        }
+        .content .main-content .breadcrumbs li.active a {
+            color: #999;
+        }
+        .content .main-content .products {}
+            .content .main-content .products .product {
+                display: block;
+                position: relative;
+                margin: 0 1% 10px;
+                width: 48%;
+                min-height: 405px;
+                float: left;
+                border-bottom: 1px dashed #999;
+            }
+                .content .main-content .products .product .media {}
+                    .content .main-content .products .product .media .swatches li {
+                        margin: 6px 6px 0 0;
+                        float: left;
+                    }
+                        .content .main-content .products .product .media .swatches li a {
+                            display: block;
+                            width: 15px;
+                            height: 15px;
+                            text-indent: -9999px;
+                            border: 1px solid #EEEEEE;
+                        }
+                        .content .main-content .products .product .media .swatches li.black a { background: #000; }
+                        .content .main-content .products .product .media .swatches li.white a { background: #fff; }
+                        .content .main-content .products .product .media .swatches li.red a { background: #F00; }
+                .content .main-content .products .product .info {
+                    padding: 5px 0;
+                }
+                    .content .main-content .products .product .info p {
+                        margin: 0;
+                    }
+                    .content .main-content .products .product .info .name {
+                        margin: 0;
+                    }
+                        .content .main-content .products .product .info .name a { color: #333; }
+                    .content .main-content .products .product .info .sku {
+                        color: #999;
+                        font-size: 0.625em;
+                    }
+                    .content .main-content .products .product .info .description {
+                        font-size: 0.875em;
+                    }
+                    .content .main-content .products .product .info .ratings {
+                        margin: 5px 0;
+                        padding: 2px;
+                        background-color: #eee;
+                    }
+                        .content .main-content .products .product .info .ratings .rating {
+                            width: 74px;
+                            height: 14px;
+                            text-indent: -9999px;
+                            background: url("../img/sprite_ratings.png") no-repeat scroll 0 -14px transparent;
+                        }
+                        .content .main-content .products .product .info .ratings .rating-10 { background-position: 0 -28px; }
+                        .content .main-content .products .product .info .ratings .rating-20 { background-position: 0 -42px; }
+                        .content .main-content .products .product .info .ratings .rating-30 { background-position: 0 -56px; }
+                        .content .main-content .products .product .info .ratings .rating-40 { background-position: 0 -70px; }
+                        .content .main-content .products .product .info .ratings .rating-50 { background-position: 0 -84px; }
+                        .content .main-content .products .product .info .ratings .rating-60 { background-position: 0 -98px; }
+                        .content .main-content .products .product .info .ratings .rating-70 { background-position: 0 -112px; }
+                        .content .main-content .products .product .info .ratings .rating-80 { background-position: 0 -126px; }
+                        .content .main-content .products .product .info .ratings .rating-90 { background-position: 0 -140px; }
+                        .content .main-content .products .product .info .ratings .rating-100 { background-position: 0 -154px; }
+                    .content .main-content .products .product .info .prices {
+                        line-height: 20px;
+                        vertical-align: top;
+                    }
+                        .content .main-content .products .product .info .prices .price {
+                            float: left;
+                            font-size: 0.875em;
+                        }
+                        .content .main-content .products .product .info .prices .price-sale {
+                            margin: 0 8px 0 0;
+                        }
+                        .content .main-content .products .product .info .prices .price-original {
+                            color: #999;
+                            font-size: 0.75em;
+                            text-decoration: line-through;
+                        }
+                    .content .main-content .products .product .info .add-to-cart a {
+                        display: block;
+                        margin: 5px 0 0;
+                        padding: 5px 0;
+                        color: #000;
+                        text-align: center;
+                        background: #eee;
+                    }
+                    .content .main-content .products .product .info .add-to-cart a:hover {
+                        text-decoration: none;
+                        background: #999;
+                    }
+                .content .main-content .products .product .quickview-trigger {
+                    display: none;
+                }
+    .content .sidebar {
+        padding: 1em 0;
+        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
+    }
+        .content .sidebar .secondary-nav {}
+            .content .sidebar .secondary-nav .active {
+                font-weight: bold;
+            }
+            .content .sidebar .secondary-nav ul {
+                margin: 0 0 0 1em;
+            }
+.footer {}
+    .footer .section {
+        text-align: center;
+    }
+
+/* ==========================================================================
+   Small Screen
+   ========================================================================== */
+@media screen and (min-width: 480px) {
+    .header .utility {
+        padding: 5px 0;
+        width: 60%;
+        float: left;
+        font-size: 0.750em;
+    }
+        .header .utility ul li {
+            padding: 0 4px;
+            font-size: 1em;
+        }
+    .header .cart {
+        padding: 5px 0;
+        width: 40%;
+        float: right;
+        font-size: 0.750em;
+        font-variant: normal;
+        text-align: right;
+        border-bottom: 1px solid #333;
+    }
+    
+    .content .main-content .products .product {
+        margin: 0 0 10px;
+        padding: 0 0 5px;
+        width: 100%;
+        min-height: 0;
+    }
+    .content .main-content .products .product:last-child { border: none; }
+        .content .main-content .products .product .media {
+            width: 30%;
+            float: left;
+        }
+        .content .main-content .products .product.alt .media {
+            float: right;
+        }
+        .content .main-content .products .product .info {
+            padding: 0;
+            width: 68%;
+            float: right;
+        }
+        .content .main-content .products .product.alt .info {
+            float: left;
+            text-align: right;
+        }
+            .content .main-content .products .product .info .ratings {
+                width: 78px;
+            }
+            .content .main-content .products .product.alt .info .ratings {
+                float: right;
+                direction: rtl;
+            }
+            .content .main-content .products .product.alt .info .prices {
+                clear: both;
+                float: right;
+            }
+            .content .main-content .products .product.alt .info .compare {
+                clear: both;
+            }
+            .content .main-content .products .product .info .add-to-cart a {
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                bottom: 5px;
+                margin: 0;
+                padding: 10px 25px;
+            }
+            .content .main-content .products .product.alt .info .add-to-cart a {
+                left: 0;
+                right: auto;
+            }
+
+    .footer .section {
+        width: 33.33%;
+        float: left;
+    }
+}
+/* Some Header changes best at a larger width */
+@media screen and (min-width: 600px) {
+    .header .menu {
+        display: none;
+    }
+    .header .navigation {
+        width: 60%;
+        float: left;
+    }
+        .header .primary-nav {
+            display: block;
+            text-align: center;
+        }
+            .header .primary-nav li {
+                display: inline-block;
+                padding: 0 10px 0 0;
+            }
+    .header .search {
+        margin: 0;
+        width: 40%;
+        float: right;
+        text-align: right;
+    }
+}
+
+/* ==========================================================================
+   Mid-Sized
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+    .header .utility ul {
+        text-align: left;
+    }
+    .header .primary-nav {
+        text-align: left;
+    }
+
+    .content .main-content {
+        width: 66.66%;
+        float: right;
+    }
+        .content .main-content .breadcrumbs {
+            margin-left: 5%;
+            height: 40px;
+        }
+    .content .sidebar {
+        margin-top: 20px;
+        padding: 0;
+        width: 33.33%;
+        float: left;
+        border: none;
+    }
+
+    .footer {
+        border-top: 1px solid #333;
+    }
+}
+
+/* ==========================================================================
+   Full-Width
+   ========================================================================== */
+@media screen and (min-width: 975px) {
+    body {
+        margin: 0 auto;
+        max-width: 955px;
+    }
+
+    .content .main-content {
+        width: 80%;
+    }
+
+    .content .sidebar {
+        width: 20%;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
