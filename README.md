@@ -1,8 +1,7 @@
 # Product Browse ZigZag Layout
 ## A product browse prototype experimenting with a zigzag layout
 
-- Available to view [here](http://brianrberg.com/product-browse-experiment/zigzag/index.html).
-	- Note: May not be up to date with this repo.
+- Available to view [here](http://bberg11.github.com/ZigZagBrowse/).
 - Meant to be take advantage of the way most users scan a webpage: In a "Z-pattern" or "Zigzag" pattern
 - Some interesting articles on Z Layouts:
 	- [Understanding the Z-Layout in Web Design](http://webdesign.tutsplus.com/articles/design-theory/understanding-the-z-layout-in-web-design/)
